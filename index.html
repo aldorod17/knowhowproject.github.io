@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<div class="contenedor">
+			<p id="nueve">9</p>
+			<p id="pasos-ctin">PASOS PARA HACER UN PROYECTO CTIN</p>
+		</div>
+		<div>
+			<div id="idea">
+				<div id= "circulo-idea" class="circulitos" onclick="mostrarPopupIdea()">
+					<img class= "icono1"src="../img/foquito.png" alt="">
+				</div>
+				<div id="cuadro-idea"></div>
+					<p id="textos-idea">LA IDEA</p>
+			</div>
+			<div id="proyecto">
+				<div id= "circulo-proyecto" class="circulitos" onclick="mostrarPopupDocumento()">
+					<img class= "icono1"src="../img/documento.png" alt="">
+				</div>
+				<div id="cuadro-proyecto"></div>
+					<p id="textos-proyecto">CUERPO DEL PROYECTO</p>
+			</div>
+			<div id="negocios">
+				<div id= "circulo-negocios" class="circulitos" onclick="mostrarPopupCanvas()">
+					<img class= "icono1"src="../img/negocios.png" alt="">
+				</div>
+				<div id="cuadro-negocios"></div>
+					<p id="textos-negocios">CANVAS</p>
+			</div>
+			<div id="oportunidades">
+				<p>DOS OPORTUNIDADES POR PROYECTO</p>
+			</div>
+			<img id="vida" src="../img/vida.png" alt="" class="icono1">
+			<div id="x2">
+				<p>x2</p>
+			</div>
+			<div id="arquitectura">
+				<div id= "circulo-arquitectura" class="circulitos" onclick="mostrarPopupArquitectura()">
+					<img class= "icono1"src="../img/arquitectura.png" alt="">
+				</div>
+				<div id="cuadro-arquitectura"></div>
+					<p id="textos-arquitectura">ARQUITECTURA</p>
+			</div>
+			<div id="matadero">
+				<div id= "circulo-matadero" class="circulitos" onclick="mostrarPopupMatadero()">
+					<img class= "icono1"src="../img/matadero.png" alt="">
+				</div>
+				<div id="cuadro-matadero"></div>
+					<p id="textos-matadero">MATADERO</p>
+			</div>
+			<div id="usuario">
+				<div id= "circulo-usuario" class="circulitos" onclick="mostrarPopupUsuario()">
+					<img class= "icono1"src="../img/usuario.png" alt="">
+				</div>
+				<div id="cuadro-usuario"></div>
+					<p id="textos-usuario">PRUEBAS DE USUARIO</p>
+			</div>
+			<div id="disenio">
+				<div id= "circulo-disenio" class="circulitos" onclick="mostrarPopupDiseno()">
+					<img class= "icono1"src="../img/diseno.png" alt="">
+				</div>
+				<div id="cuadro-disenio"></div>
+					<p id="textos-disenio">DISEÑO</p>
+			</div>
+			<div id="joker">
+				<div id= "circulo-joker" class="circulitos" onclick="mostrarPopupJoker()">
+					<img class= "icono1"src="../img/adn.png" alt="">
+				</div>
+				<div id="cuadro-joker"></div>
+					<p id="textos-joker">JOKER</p>
+			</div>
+			<div id="calidad">
+				<div id="circulo-calidad" class="circulitos" onclick="mostrarPopupCalidad()">
+					<img class= "icono1"src="../img/calidad.png" alt="">
+				</div>
+				<div id="cuadro-calidad"></div>
+					<p id="textos-calidad">PRUEBAS DE CALIDAD</p>
+			</div>
+			<div id="producto">
+				<div id="circulo-producto" class="circulitos" onclick="mostrarPopupProducto()">
+					<img class= "icono1"src="../img/producto.png" alt="">
+				</div>
+				<div id="cuadro-producto"></div>
+					<p id="textos-producto">PRODUCTO</p>
+			</div>
+			<div id="cuadro-iterar">
+				<p id="iterar-titulo">ITERAR:</p>
+				<p id="iterar-texto">EL ACTO DE REPETIR UN PROCESO CON EL OBJETIVO DE ALCANZAR UNA META DESEADA, OBJETIVO O RESULTADO. CADA REPETICIÓN DEL PROCESO TAMBIÉN SE LE DENOMINA UNA "ITERACIÓN", Y LOS RESULTADOS DE UNA ITERACIÓN SE UTILIZAN COMO PUNTO DE PARTIDA PARA LA SIGUIENTE ITERACIÓN.</p>
+			</div>
+			<div id= "iterar">
+				<p id="it1">ITERAR ITERAR</p>
+				<p id="it2">ITERAR ITERAR ITERAR</p>
+				<p id="it3">ITERAR ITERAR ITERAR</p>
+				<p id="it4">ITERAR ITERAR ITERAR</p>
+				<p id="it5">ITERAR ITERAR ITERAR</p>
+				<p id="it6">ITERAR ITERAR ITERAR</p>
+				<p id="it7">ITERAR ITERAR ITERAR</p>
+				<p id="it8">ITERAR ITERAR ITERAR</p>
+				<p id="it9">ITERAR ITERAR ITERAR</p>
+				<p id="it10">ITERAR ITERAR</p>
+			</div>
+
+			<div id="punta-flecha"></div>
+			<div id="punta-flecha1"></div>
+			<div id="linea1"></div>
+			<div id="linea2"></div>
+			<img id="dislike" src="../img/dislike.png" alt="" class="icono1">
+			<div id="linea3"></div>
+			<div id="linea4"></div>
+			<div id="linea5"></div>
+			<div id="linea6"></div>
+			<div id="linea7"></div>
+			<img id="like" src="../img/like.png" alt="" class="icono1">
+			<div id="linea8"></div>
+			<div id="linea9"></div>
+			<div id="linea10"></div>
+			<div id="linea11"></div>
+			<div id="linea-punteada"></div>
+			<div id="cuadro-punteada">
+				<p>AL PASAR ÉSTA LINEA EL PROYECTO ES VIABLE</p>
+			</div>
+		</div>
+		<div id="popup-idea" class="popup" onclick="cerrarPopup ()">
+			<div class="title">
+				<div id="icono-popup">
+					<img src="../img/foquito1.png" alt="">
+				</div>
+				<div id="titulo-popup">
+					<h1>LA IDEA</h1>
+				</div>
+			</div>
+			<div id="contenido-popup">
+				<p>
+					Es el inicio de tu proyecto. ¿Cómo lo imaginas? ¿Qué hará? ¿Para quién sería? ¿Quién te ayudará a desarrollarla? 
+				</p>
+				</br>
+				<p>
+					Es importante que tengas tu idea bien clara para iniciar con el pie derecho. Si te cuesta trabajo aterrizarla, pide ayuda a alguien que estructure de forma clara.
+				</p>
+				</br>
+				<p>
+					Entregables:
+				</p>
+				</br>
+				<p>
+					<ul>
+						<li>Objetivos</li>
+						<li>Características del Producto</li>
+						<li>Establecimiento del equipo de trabajo</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+		<div id="popup-documento" class="popup" onclick="cerrarPopup ()">
+			<div class="title">
+				<div id="icono-popup">
+					<img src="../img/documento1.png" alt="">
+				</div>
+				<div id="titulo-popup">
+					<h1>CUERPO DEL PROYECTO</h1>
+				</div>
+			</div>
+			<div id="contenido-popup">
+				<p>Como a un bebé, tienes que  darle lo necesario para que se desarrolle de forma correcta. ¿Quién es tu competencia? ¿Hacia a dónde te diriges? ¿Cuál es la esencia de tu proyecto y qué lo hace único? ¿Cómo funcionará?</p>
+				</br>
+				<p>Entregables:</p>
+				</br>
+				<p>
+				<ul>
+					<li>Análisis de competencia y perfil de usuario (Equipo de negocios)</li>
+					<li>Propuestas de características del producto (Equipo de negocios, itera con: diseño y desarrollo)</li>
+					<li>Propuestas de concepto (Equipo de diseño, itera con: negocios y desarrollo)</li>
+					<li>Propuestas de funcionamiento (Equipo de desarrollo, itera con: diseño y negocios)</li>
+				</ul>
+				</p>				
+			</div>
+		</div>
+		<div id="popup-canvas" class="popup" onclick="cerrarPopup ()">
+			<div class="title">
+				<div id="icono-popup">
+					<img src="../img/negocios1.png" alt="">
+				</div>
+				<div id="titulo-popup">
+					<h1>CANVAS</h1>
+				</div>
+			</div>
+			<div id="contenido-popup">Es como armar un rompecabezas. Cada pieza es clave. Si logras armarlo, obtendrás toda una estrategia para que tu proyecto sea atractivo para los inversionistas.
+			</br>
+			</br>
+				<ul>
+					<li>Segmentos de mercado</li>
+					<li>Propuestas de valor</li>
+					<li>Canales</li>
+					<li>Relaciones con clientes</li>
+					<li>Fuentes de ingresos</li>
+					<li>Recursos claves</li>
+					<li>Actividades clave</li>
+					<li>Asociaciones clave</li>
+					<li>Estructura de costos</li>
+				</ul>
+			</div>
+		</div>
+		<div id="popup-arquitectura" class="popup" onclick="cerrarPopup ()">
+			<div class="title">
+				<div id="icono-popup">
+					<img src="../img/arquitectura1.png" alt="">
+				</div>
+				<div id="titulo-popup">
+					<h1>ARQUITECTURA POR BLOQUES</h1>
+				</div>
+			</div>
+			<div id="contenido-popup">
+				<p>¿Cuál será el orden de tu proyecto? ¿Cómo van a interactuar los usuarios con tu producto? Cada ves avanzas más en la formación de tu proyecto. Cuando lo realices, podrás hacer un prototipo y mostrarlo a los usuarios. Esta etapa está hecha para los arquitectos de la información y el equipo de diseño.</p>
+				<br/>
+				<p>Entregables:</p>
+				</br>
+				<ul>
+					<li>Bloques del proyecto</li>
+					<li>Mapa de navegación y Wireframes (Según sea el caso)</li>
+					<li>Casos de uso</li>
+				</ul>
+			</div>
+		</div>
+		<div id="popup-matadero" class="popup" onclick="cerrarPopup ()">
+			<div class="title">
+				<div id="icono-popup">
+					<img src="../img/matadero1.png" alt="">
+				</div>
+				<div id="titulo-popup">
+					<h1>MATADERO</h1>
+				</div>
+			</div>
+			<div id="contenido-popup">
+				<p>
+					¿Estás listo para poner a prueba tu trabajo hasta ahora? Tienes solo seis minutos para exponer tu proyecto ante diez personas. Realiza una presentación que conteste éstas simples preguntas:
+				</p>
+				</br>
+				<ul>
+					<li>¿Cómo se llama?</li>
+					<li>¿Qué es?</li>
+					<li>¿Cómo funciona?</li>
+					<li>¿Cómo lo harás?</li>
+					<li>¿Para quién es?</li>
+					<li>¿Hay competencia?</li>
+					<li>¿Podemos echar un vistazo a tu modelo de negocios?</li>
+				</ul>
+			</div>
+		</div>
+		<div id="popup-usuario" class="popup" onclick="cerrarPopup ()">
+			<div class="title">
+				<div id="icono-popup">
+					<img src="../img/usuario1.png" alt="">
+				</div>
+				<div id="titulo-popup">
+					<h1>PRUEBAS DE USUARIO</h1>
+				</div>
+			</div>
+			<div id="contenido-popup">
+				<p>
+					Ahora que tienes un prototipo, es momento de que los usuarios interactúen con él. La “retro” obtenida es la más importante, puesto que las personas son las que usarán tu producto.
+				</p>
+				</br>
+				<p>
+					Es importante que las pruebas sean realizadas constantemente, para poder corregir sobre la marcha del desarrollo del proyecto y no al final, ya que en inversión de tiempo, esto no sería viable.
+				</p>
+				</br>
+				<p>Este proceso es llevado a cabo por el Project Manager, iterando con el líder de diseño, líder de negocios, líder de desarrollo y el arquitecto de la información</p>
+			</div>
+		</div>
+		<div id="popup-disenio" class="popup" onclick="cerrarPopup ()">
+			<div class="title">
+				<div id="icono-popup">
+					<img src="../img/diseno1.png" alt="">
+				</div>
+				<div id="titulo-popup">
+					<h1>DISEÑO</h1>
+				</div>
+			</div>
+			<div id="contenido-popup">
+				<p>El diseño, es un proceso que te acompañará durante todo tu camino. Su objetivo no solo es embellecer el trabajo, sino asegurarte que las cosas salgan de lo mejor.</p>
+				</br>
+				<p>
+					Deja que los diseñadores hagan lo que mejor saben hacer:<span id="sorprenderte"> SORPRENDERTE</span>.
+				</p>
+				</br>
+				<p>Apóyate del diseñador al que más confianza le tengas.</p>
+			</div>
+		</div>
+		<div id="popup-joker" class="popup" onclick="cerrarPopup ()">
+			<div class="title">
+				<div id="icono-popup">
+					<img src="../img/adn1.png" alt="">
+				</div>
+				<div id="titulo-popup">
+					<h1>THE JOKER</h1>
+				</div>
+			</div>
+			<div id="contenido-popup">
+				<p>
+					Es el comodín. Aquí pueden entrar diversas actividades que necesite tu proyecto; puedes retomar las que te proponemos, pero si consideras que hacen falta, puedes acomodar en este espacio el proceso que consideres necesario para que tu proyecto sea el mejor de <span id="todos">TODOS</span>
+				</p>
+				</br>
+				<ul>
+					<li>Programación (Funcionalidad y desarrollo por bloques)</li>
+					<li>Diseño de interfaz y mock-ups</li>
+					<li>Desarrollo de Hardware</li>
+					<li>Detalles del modelo </li>
+					<li>Detalles del concepto</li>
+				</ul>
+				<br/>
+				<p>Te recomendamos que dividas por bloques tus avances para que tengas un mejor control de tu proyecto.</p>
+			</div>
+		</div>
+		<div id="popup-calidad" class="popup" onclick="cerrarPopup ()">
+			<div class="title">
+				<div id="icono-popup">
+					<img src="../img/calidad1.png" alt="">
+				</div>
+				<div id="titulo-popup">
+					<h1>PRUEBAS DE CALIDAD</h1>
+				</div>
+			</div>
+			<div id="contenido-popup">
+				<p>
+					Es importante saber si lo que estamos haciendo va por buen camino, así que tenemos que probarlo. Genera grupos en los que usuarios prueben tu producto y encuentren errores de funcionalidad o aspectos que no les agradaron del diseño.
+				</p>
+				</br>
+				<p>Hay que entregar algunas cosas:</p>
+				</br>
+				<ul>
+					<li>Reporte de errores de funcionalidad</li>
+					<li>Reporte de errores de diseño</li>
+				</ul>
+			</div>
+		</div>
+		<div id="popup-producto" class="popup" onclick="cerrarPopup ()">
+			<div class="title">
+				<div id="icono-popup">
+					<img src="../img/producto1.png" alt="">
+				</div>
+				<div id="titulo-popup">
+					<h1>PRODUCTO</h1>
+				</div>
+			</div>
+			<div id="contenido-popup">
+			<p>Si has llegado a este punto, primero, déjanos FELICITARTE! Tienes lo necesario para enfrentarte a inversionistas o sacar tu producto al mercado. Tienes lo que se llama:</p>
+			</br>
+			<p id="pmv">PRODUCTO MÍNIMO VIABLE</p>
+			</br>
+			<p>El trayecto aquí no termina, aún quedan más etapas por conquistar, pero por el momento ya no podemos acompañarte. Estamos seguros que lo harás de maravilla.</p>
+			</div>
+		</div>
+	</body>
+	<script>
+		var popupactive;
+		function mostrarPopupIdea() {
+				$('#popup-idea').fadeIn(300);
+				popupactive = 1;
+			}
+		function cerrarPopup() {
+			switch(popupactive) {
+				case 1:
+					$('#popup-idea').fadeOut(300);
+					break;
+				case 2:
+					$('#popup-documento').fadeOut(300);
+					break;
+				case 3:
+					$('#popup-canvas').fadeOut(300);
+					break;
+				case 4:
+					$('#popup-arquitectura').fadeOut(300);
+					break;
+				case 5:
+					$('#popup-matadero').fadeOut(300);
+					break;
+				case 6:
+					$('#popup-usuario').fadeOut(300);
+					break;
+				case 7:
+					$('#popup-disenio').fadeOut(300);
+					break;
+				case 8:
+					$('#popup-joker').fadeOut(300);
+					break;
+				case 9:
+					$('#popup-calidad').fadeOut(300);
+					break;
+				case 10:
+					$('#popup-producto').fadeOut(300);
+					break;
+
+			}
+		}
+		function mostrarPopupDocumento() {
+				$('#popup-documento').fadeIn(300);
+				popupactive = 2;
+			}
+		function mostrarPopupCanvas() {
+				$('#popup-canvas').fadeIn(300);
+				popupactive = 3;
+			}
+		function mostrarPopupArquitectura() {
+				$('#popup-arquitectura').fadeIn(300);
+				popupactive = 4;
+			}
+		function mostrarPopupMatadero() {
+				$('#popup-matadero').fadeIn(300);
+				popupactive = 5;
+			}
+		function mostrarPopupUsuario() {
+				$('#popup-usuario').fadeIn(300);
+				popupactive = 6;
+			}
+		function mostrarPopupDiseno() {
+				$('#popup-disenio').fadeIn(300);
+				popupactive = 7;
+			}
+		function mostrarPopupJoker() {
+				$('#popup-joker').fadeIn(300);
+				popupactive = 8;
+			}
+		function mostrarPopupCalidad() {
+				$('#popup-calidad').fadeIn(300);
+				popupactive = 9;
+			}
+		function mostrarPopupProducto() {
+				$('#popup-producto').fadeIn(300);
+				popupactive = 10;
+			}
+	</script>
+</html>
